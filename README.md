@@ -1,0 +1,37 @@
+# Portefaix Heka
+
+[![Circle CI](https://circleci.com/gh/portefaix/docker-heka/tree/master.svg?style=svg)](https://circleci.com/gh/portefaix/docker-heka/tree/master)
+
+![logo](https://pkgs.alpinelinux.org/assets/alpinelinux-logo.svg)
+
+[Alpine Linux][] is a Linux distribution built around musl libc and BusyBox.
+This image is based on the official Alpine Linux.
+
+Ports exported are : `4881` and `4352` (Heka Dashboard)
+
+## Usage
+
+    $ docker run -it -p 4881:4881 -p 4352:4352 portefaix/heka:0.10.0b1
+
+## Supported tags
+
+- `0.10.0b1` [![](https://badge.imagelayers.io/portefaix/heka:0.10.0b1.svg)](https://imagelayers.io/?images=portefaix/heka:0.10.0b1 'imagelayers.io')
+
+## License
+
+See [LICENSE](LICENSE) for the complete license.
+
+
+## Changelog
+
+A [ChangeLog.md](ChangeLog.md) is available.
+
+
+## Contact
+
+Nicolas Lamirault <nicolas.lamirault@gmail.com>
+
+
+[Alpine Linux]: http://www.alpinelinux.org
+
+[heka]: https://github.com/mozilla-services/heka
