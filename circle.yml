@@ -12,16 +12,16 @@ dependencies:
     - "~/docker"
   override:
     - docker info
-    - docker build -t portefaix/elasticsearch:1.7 1.7
+    - docker build -t portefaix/heka:0.10 0.10
 
 test:
   override:
-    - docker run -d -p 9207:9200 portefaix/elasticsearch:1.7; sleep 20
-    - curl --retry 10 --retry-delay 5 -v http://localhost:9207
+    - docker run -d -p 4881:4881 -p 4352:4352 portefaix/heka:0.10; sleep 40
+    - curl --retry 10 --retry-delay 5 -v http://localhost:4352
 
 #deployment:
 #  hub: 
 #    branch: master
 #    commands:
 #      - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
-#      - docker push portefaix/elasticsearch
+#      - docker push portefaix/heka
