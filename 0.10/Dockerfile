@@ -1,11 +1,11 @@
-# VERSION 0.10.0b1
+# VERSION 0.10.0b2
 # AUTHOR:         Nicolas Lamirault <nicolas.lamirault@gmail.com>
 # DESCRIPTION:    portefaix/grafana
 
 FROM portefaix/base:3.2
 MAINTAINER Nicolas Lamirault <nicolas.lamirault@gmail.com>
 
-ENV HEKA_VERSION v0.10.0b1
+ENV HEKA_VERSION v0.10.0b2
 ENV GOPATH /go
 
 RUN apk add --update build-base curl go git mercurial ca-certificates cmake perl
@@ -32,6 +32,8 @@ RUN for i in decoders encoders filters modules; do \
 
 EXPOSE 4881
 EXPOSE 4352
+
+VOLUME ["/usr/share/heka"]
 
 CMD ["/usr/share/heka/bin/hekad", "--config", "/usr/share/heka/config.toml"]
 

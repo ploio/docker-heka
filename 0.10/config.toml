@@ -2,6 +2,10 @@
 maxprocs = 10
 share_dir = "/usr/share/heka"
 
+[LogstreamerInput]
+log_directory = "/var/log"
+file_match = 'local7\.log'
+
 [web]
 type = "HttpListenInput"
 address = "0.0.0.0:4881"
