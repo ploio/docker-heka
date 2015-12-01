@@ -8,14 +8,19 @@
 This image is based on the official Alpine Linux.
 
 Ports exported are : `4881` and `4352` (Heka Dashboard)
+Volume exported is : `/usr/share/heka`
+
 
 ## Usage
 
     $ docker run -it -p 4881:4881 -p 4352:4352 portefaix/heka:0.10.0b1
 
+
 ## Supported tags
 
+- `0.10.0b2` [![](https://badge.imagelayers.io/portefaix/heka:0.10.0b2.svg)](https://imagelayers.io/?images=portefaix/heka:0.10.0b2 'imagelayers.io')
 - `0.10.0b1` [![](https://badge.imagelayers.io/portefaix/heka:0.10.0b1.svg)](https://imagelayers.io/?images=portefaix/heka:0.10.0b1 'imagelayers.io')
+
 
 ## License
 
