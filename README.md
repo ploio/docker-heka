@@ -16,6 +16,9 @@ Volume exported is : `/usr/share/heka`
     $ docker run -it -p 4881:4881 -p 4352:4352 portefaix/heka:0.10.0b1
 
 
+To setup an external configuration file use the exported volume : */usr/share/heka/config.toml*
+
+
 ## Supported tags
 
 - `0.10.0b2` [![](https://badge.imagelayers.io/portefaix/heka:0.10.0b2.svg)](https://imagelayers.io/?images=portefaix/heka:0.10.0b2 'imagelayers.io')
