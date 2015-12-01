@@ -1,8 +1,12 @@
 # Portefaix Heka
 
+* Master :
 [![Circle CI](https://circleci.com/gh/portefaix/docker-heka/tree/master.svg?style=svg)](https://circleci.com/gh/portefaix/docker-heka/tree/master)
 
-![logo](https://pkgs.alpinelinux.org/assets/alpinelinux-logo.svg)
+* Develop :
+[![Circle CI](https://circleci.com/gh/portefaix/docker-heka/tree/develop.svg?style=svg)](https://circleci.com/gh/portefaix/docker-heka/tree/develop)
+
+![logo](http://pkgs.alpinelinux.org/assets/alpinelinux-logo.svg)
 
 [Alpine Linux][] is a Linux distribution built around musl libc and BusyBox.
 This image is based on the official Alpine Linux.
