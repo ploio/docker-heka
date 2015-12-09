@@ -43,7 +43,7 @@ build:
 .PHONY: run
 run:
 	@echo -e "$(OK_COLOR)[$(APP)] run $(NAMESPACE)/$(IMAGE):$(VERSION)$(NO_COLOR)"
-	docker run --rm=true -p 4881:4881 -p 4352:4352 portefaix/heka:$(VERSION)
+	docker run --rm=true -p 4881:4881 -p 4352:4352 --name $(NAMESPACE)_$(IMAGE) $(NAMESPACE)/$(IMAGE):$(VERSION)
 
 .PHONY: login
 login:
